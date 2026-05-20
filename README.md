@@ -5,6 +5,7 @@ Implements **HNSW**, **KD-Tree**, and **Brute Force** search algorithms side-by-
 
 > Built as an educational project to show how production vector databases like Pinecone, Weaviate, and Chroma actually work under the hood.
 
+
 ---
 
 ## What This Project Does
