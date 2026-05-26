@@ -196,7 +196,9 @@ Unlike standard spatial partitions which degrade in high-dimensional spaces (the
 
 Labyrinth builds HNSW dynamically by inserting vectors into a multi-layered highway network graph:
 1. **Layer Assignment**: Each node is assigned a max level $l$ using a logarithmic distribution:
-   $$l = \lfloor -\ln(\text{uniform\_rand}) \cdot m_L \rfloor \quad \text{where} \quad m_L = \frac{1}{\ln(M)}$$
+  l = floor( -ln(uniform_rand) * mL )
+  where:
+  mL = 1 / ln(M)
 2. **Search Descent**: The search starts at the entry point in the highest layer, traveling greedily to the closest node at that layer. Once a local minimum is hit, it drops down one layer and continues.
 3. **Layer Connection**: From the node's maximum assigned layer down to layer 0, the node runs a beam search with size `ef_construction` and links to the closest $M$ (or $M_0$ for layer 0) neighbors.
 4. **Dynamic Pruning**: If adding an edge causes a neighbor list to exceed capacity, the list is sorted by distance and the longest edges are pruned.
