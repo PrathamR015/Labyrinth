@@ -36,7 +36,7 @@ Here is a preview of the premium, high-contrast **Labyrinth** dashboard featurin
 
 ### 3. Integrated Vector Mathematics & Distance Metrics
 Labyrinth implements three core geometric metric calculators working seamlessly across arbitrary dimensionalities (from 16D demo models to 768D semantic embeddings):
-* **Cosine Similarity**: Measures the angular orientation difference of vectors ($\text{similarity} = 1.0 - \text{cosine\_similarity}$), ignoring magnitude. The default standard metric for semantic text matching.
+* **Cosine Similarity**: Measures the angular orientation difference of vectors ignoring magnitude. The default standard metric for semantic text matching.
 * **Euclidean Distance ($L_2$)**: Calculates straight-line distance in Euclidean space. Standard for coordinate spatial mapping.
 * **Manhattan Distance ($L_1$)**: Computes grid-like absolute differences (Taxicab distance), useful for comparing high-dimensional sparse representations.
 
