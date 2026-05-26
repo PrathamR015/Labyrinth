@@ -1,0 +1,15 @@
+com\vectordb\BruteForce$SearchResult.class
+com\vectordb\DocumentDB$DocItem.class
+com\vectordb\DocumentDB.class
+com\vectordb\DistanceMetric.class
+com\vectordb\VectorItem.class
+com\vectordb\Main.class
+com\vectordb\BruteForce.class
+com\vectordb\VectorDB.class
+com\vectordb\HNSW$Node.class
+com\vectordb\HNSW.class
+com\vectordb\VectorDB$Hit.class
+com\vectordb\OllamaClient.class
+com\vectordb\VectorDB$SearchOut.class
+com\vectordb\KDTree$KDNode.class
+com\vectordb\KDTree.class
